@@ -563,6 +563,31 @@ h2.menu-card-title {
 .menu-card-text {
     text-transform: uppercase;
 }
+/* footer */
+
+.list{
+    background-color: white ;
+}
+
+/*************footer End*****************/
+
+
+
+@media (max-width: 480px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .newsletter-form button {
+        border-radius: 5px;
+    }
+}
+
 
 @media (max-width: 768px) {
     section .row {
