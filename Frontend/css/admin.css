@@ -9,12 +9,12 @@
 
 :root {
   /* ===== Colors ===== */
-  --body-color: #e4e9f7;
+  --body-color: white;
   --sidebar-color: #fff;
   --primary-color: #695cfe;
   --primary-color-light: #f6f5ff;
   --toggle-color: #ddd;
-  --text-color: #707070;
+  --text-color: white;
   --back:  linear-gradient(135deg, #13072e, #3f2182);
 
 
@@ -44,6 +44,7 @@ body.dark {
   --toggle-color: #fff;
   --text-color: #ccc;
 }
+
 
 /* ===== Sidebar ===== */
 .sidebar {
@@ -76,8 +77,8 @@ body.dark {
   border-radius: 6px;
 }
 .image{
-  height: 10px;
-  width: 10px;
+  height: 50px;
+  width: 50px;
 }
 .sidebar .icon {
   min-width: 60px;
@@ -88,10 +89,16 @@ body.dark {
   justify-content: center;
   font-size: 20px;
 }
+.text {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  gap: 10px;
+}
 
 .sidebar .text,
 .sidebar .icon {
-  color: var(--text-color);
+  color: white;
   transition: var(--tran-03);
 }
 
@@ -101,9 +108,12 @@ body.dark {
   white-space: nowrap;
   opacity: 1;
 }
+
 .sidebar.close .text {
   opacity: 0;
 }
+
+
 /* =========================== */
 
 .sidebar header {
@@ -286,17 +296,23 @@ body.dark .mode .sun-moon i.moon {
 body.dark .switch::before {
   left: 20px;
 }
+span{
+  color: red;
+}
 
+
+/* Home Section */
+/* Home Section */
 .home {
   position: absolute;
-  top: 0;
   top: 0;
   left: 250px;
   height: 100vh;
   width: calc(100% - 250px);
-  background-color: var(--body-color);
+  background-color: #13072E;
   transition: var(--tran-05);
 }
+
 .home .text {
   font-size: 30px;
   font-weight: 500;
@@ -309,6 +325,146 @@ body.dark .switch::before {
   height: 100vh;
   width: calc(100% - 78px);
 }
+
 body.dark .home .text {
   color: var(--text-color);
+}
+
+/* Active Class */
+.active {
+  color: white;
+  background-color: #695cfe;
+}
+
+/* Welcome Nav Section */
+.welcome-nav {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.welcome-nav marquee {
+  height: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f0f0f0;
+  border-top: 1px ridge;
+  border-bottom: 1px ridge;
+}
+
+/* Balance Wallet Section */
+.balance-wallet {
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  border-radius: 50px;
+  padding: 15px 20px;
+  gap: 150px;
+}
+
+.wallet {
+  background-color: #ADACB8;
+  border-radius: 20px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.balance {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  font-weight: bold;
+  height: 200px;
+}
+
+.wallet-text {
+  display: flex;
+  background-color: #ADACB8;
+  border-radius: 20px;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  gap: 30px;
+}
+
+.wallet-text-2 {
+  display: flex;
+  background-color: #ADACB8;
+  border: 1px ridge;
+  border-radius: 30px;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 30px; */
+  margin-left: 70px;
+  margin-right: 30px;
+  /* margin-bottom: auto; */
+  gap: 30px;
+}
+
+.balance-text {
+  display: block;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px ridge;
+  text-align: left;
+  height: 250px;
+  width: 100%;
+  padding: 30px 40px;
+}
+
+.balance-text p h1 {
+  font-size: 100px;
+}
+
+.balance i {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Typography */
+h1 {
+  color: black;
+  font-size: 20px;
+}
+
+p {
+  color: black;
+}
+
+.bx {
+  color: white;
+}
+
+/* Button Styling */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: #ADACB8;
+  color: black;
+  border: 2px solid black;
+  font-weight: bolder;
 }

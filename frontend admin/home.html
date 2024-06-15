@@ -9,7 +9,7 @@
 
   <!----======== CSS ======== -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="./css/admin.css">
+  <link rel="stylesheet" href="../Frontend/css/admin.css">
     <!----===== Boxicons CSS ===== -->
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
@@ -22,8 +22,9 @@
     <header>
       <div class="image-text">
         <span class="image">
-          <img src="../Asset/img/3-removebg-preview.png" alt="logo">
-        </span>
+            <a href="./admin.html">
+                <img src="../Asset/img/3-removebg-preview.png" alt="logo">
+              </a>        </span>
 
         <div class="text logo-text">
           <span class="name">CT TECH</span>
@@ -36,17 +37,11 @@
 
     <div class="menu-bar">
       <div class="menu">
-
-        <li class="search-box">
-          <i class='bx bx-search icon'></i>
-          <input type="text" placeholder="Search Ganes...">
-        </li>
-
         <ul class="menu-links">
           <li class="nav-link">
             <a href="#">
               <i class='bx bx-home-alt icon'></i>
-              <span class="text nav-text">Dashboard</span>
+              <span class="text nav-text" id="active">Dashboard</span>
             </a>
           </li>
 
@@ -90,7 +85,7 @@
 
       <div class="bottom-content">
         <li class="">
-          <a href="#">
+          <a href="../login.html">
             <i class='bx bx-log-out icon'></i>
             <span class="text nav-text">Logout</span>
           </a>
@@ -114,11 +109,39 @@
   </nav>
 
   <section class="home">
-    <div class="text">Dashboard Sidebar</div>
+    <div class="text">
+      <a href="#"><i class='bx bx-sun icon sun'></i></a>
+      <a href="#"><i class='bx bx-bell icon'></i></a>
+    </div>
   </section>
-
-  <script src="./javaScript/admin.js"></script>
-
+  
+  <br><br>
+  
+  <section class="welcome-nav">
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+      Welcome back: <span>username</span> 
+    </marquee>
+  <div class="balance-wallet">
+    <div class="wallet">
+      <div class="balance">
+        <i class='bx bx-wallet icon'></i>
+        <h1>Wallet Balance</h1>
+        <p>00.00</p>
+      </div>
+      <div class="balance">
+        <i class='bx bx-group icon'></i>
+        <h1>Referral Balance</h1>
+        <p>00.00</p>
+      </div>
+      <div class="balance">
+        <i class='bx bx-task icon'></i>
+        <h1>Task Balance</h1>
+        <p>00.00</p>
+      </div>
+    </div>
+  </section>
+ 
+  <script src="../Frontend/javaScript/admin.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Frontend/css/login.css">
+    <title>CT TECH Password Recovery</title>
+</head>
+<body>
+    <section class="container">
+        <div class="login-container">
+            <h1>PASSWORD RECOVERY</h1>
+            <p>hello@reallygreatsite.com</p>
+            <form action="">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="holder" placeholder="Email@.com">
+                
+                <div class="OTP-container">
+                    <div id="inputs" class="inputs">
+                        <input class="OTP_inputs" type="text" inputmode="numeric" maxlength="1" />
+                        <input class="OTP_inputs" type="text" inputmode="numeric" maxlength="1" />
+                        <input class="OTP_inputs" type="text" inputmode="numeric" maxlength="1" />
+                        <input class="OTP_inputs" type="text" inputmode="numeric" maxlength="1" />
+                    </div>
+                </div>
+                <button type="submit" onclick="OTP()">Get password</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        // Event listener for input in OTP fields
+        const inputs = document.getElementById("inputs");
+
+        inputs.addEventListener("input", function (e) {
+            const target = e.target;
+            const val = target.value;
+
+            // Ensure only numeric input is accepted
+            if (isNaN(val)) {
+                target.value = "";
+                return;
+            }
+
+            // Move focus to the next input field if the current one is filled
+            if (val !== "") {
+                const next = target.nextElementSibling;
+                if (next) {
+                    next.focus();
+                }
+            }
+        });
+
+        inputs.addEventListener("keyup", function (e) {
+            const target = e.target;
+            const key = e.key.toLowerCase();
+
+            // Handle backspace and delete key to move focus to the previous input field
+            if (key === "backspace" || key === "delete") {
+                target.value = "";
+                const prev = target.previousElementSibling;
+                if (prev) {
+                    prev.focus();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

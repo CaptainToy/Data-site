@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #13072E;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #13072E;
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    background: #13072E;
+    text-align: center;
+    color: white;
+    width: 700px;
+    height: 700px;
+    margin-top: 50px;
+}
+h1 {
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+    font-size: 2px;
+    margin-bottom: 30px;
+}
+.login-container p {
+    margin-top: -10px;
+    font-size: 10px;
+    margin-bottom: 50px;
+}
+label {
+    display: flex;
+    margin-left: 20px;
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.holder {
+    padding: 12px 10px;
+    padding-left: 2cqb;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FFFFFF;
+    outline: none;
+    width: 470px;
+    height: 50px;
+    font-size: 20px;
+}
+button {
+    width: 50%;
+    padding: 20px 10px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    border: 1px ridge;
+    width: 50%;
+    padding: 10px 8px;
+    background: none;
+    box-shadow: 5px 10px black;
+    transition: 0.5s ease-out;
+    transition-duration: 1s;
+}
+.forgot-password {
+    position: sticky;
+    font-size: 12px;
+    color: #B3B3B3;
+    margin-top: 50px;
+    text-decoration: none;
+}
+input::placeholder {
+    padding-left: 10px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* OTP */
+.OTP-container {
+    margin-top: 40px;
+    display: flex;
+    border-radius: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.OTP_inputs {
+	width: 40px;
+	border: none;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+	margin: 0 10px;
+	text-align: center;
+	font-size: 36px;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+.OTP_inputs:focus {
+	border-bottom: 3px solid orange;
+	outline: none;
+}
+
+.OTP_inputs:nth-child(1) {
+	cursor: pointer;
+	pointer-events: all;
+}
+
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 25px;
+        width: 500px;
+        height: auto;
+        margin-top: 0;
+    }
+    h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .holder {
+        font-size: 16px;
+        padding: 10px 8px;
+        margin-bottom: 30px;
+        outline: none;
+        width: 300px;
+        height: 50px;
+    }
+    button {
+        padding: 15px 8px;
+    }
+    .OTP-container {
+        margin-top: 35px; /* Adjusted margin for medium screens */
+        border-radius: 18px; /* Slightly adjusted border-radius */
+    }
+
+    .OTP_inputs {
+        width: 35px; /* Adjusted width for medium screens */
+        margin: 0 8px; /* Adjusted margin between inputs */
+        font-size: 30px; /* Adjusted font-size for medium screens */
+    }
+}
+
+@media (max-width: 420px) {
+    html {
+        font-size: 55%; /* Adjusted slightly to keep the text readable on slightly larger screens */
+    }
+    .login-container {
+        width: 100%;
+        height: auto;
+        padding: 20px; /* Keeping padding same as it fits well for this size */
+    }
+    h1 {
+        font-size: 26px; /* Slightly increased to match the slightly larger screen */
+    }
+    .holder {
+        font-size: 15px; /* Slightly increased for better readability */
+        padding: 10px 8px; /* Adjusted for slightly larger screen */
+        margin-bottom: 35px; /* Increased to maintain visual balance */
+        outline: none;
+        width: 250px; /* Increased width to accommodate the slightly larger screen */
+        height: 45px; /* Increased height for better usability */
+    }
+    button {
+        padding: 12px 6px; /* Slightly increased padding for better touch target */
+        font-size: 15px; /* Slightly increased for readability */
+    }
+    .OTP-container {
+        margin-top: 30px; /* Reduced margin for smaller screens */
+        border-radius: 15px; /* Adjusted border-radius */
+    }
+
+    .OTP_inputs {
+        width: 30px; /* Reduced width for smaller screens */
+        margin: 0 5px; /* Reduced margin between inputs */
+        font-size: 24px; /* Reduced font-size for smaller screens */
+    }
+}
+
