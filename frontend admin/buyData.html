@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!----======== CSS ======== -->
+  <link rel="stylesheet" href="../Frontend/css/admin.css">
+  <link rel="stylesheet" href="../Frontend/css/login.css">
+    <!----===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>CT TECH Company Dashboard</title>
+
+</head>
+
+<body>
+  <nav class="sidebar close">
+    <header>
+      <div class="image-text">
+        <span class="image">
+            <a href="./admin.html">
+                <img src="../Asset/img/3-removebg-preview.png" alt="logo">
+              </a>        </span>
+
+        <div class="text logo-text">
+          <span class="name">CT TECH</span>
+          <span class="profession">Company</span>
+        </div>
+      </div>
+
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-home-alt icon'></i>
+              <span class="text nav-text" id="active">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-bar-chart-alt-2 icon'></i>
+              <span class="text nav-text">Own a website</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-bell icon'></i>
+              <span class="text nav-text">Resolution center</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-pie-chart-alt icon'></i>
+              <span class="text nav-text">wallet</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-heart icon'></i>
+              <span class="text nav-text">Airtime 2 cash</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-wallet icon'></i>
+              <span class="text nav-text">My Account</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="bottom-content">
+        <li class="">
+          <a href="../login.html">
+            <i class='bx bx-log-out icon'></i>
+            <span class="text nav-text">Logout</span>
+          </a>
+        </li>
+
+        <li class="mode">
+          <div class="sun-moon">
+            <i class='bx bx-moon icon moon'></i>
+            <i class='bx bx-sun icon sun'></i>
+          </div>
+          <span class="mode-text text">Dark mode</span>
+
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <section class="home">
+    <div class="text">
+      <a href="#"><i class='bx bx-sun icon sun'></i></a>
+      <a href="#"><i class='bx bx-bell icon'></i></a>
+    </div>
+  </section>
+  
+  <br><br>
+  
+  <section class="welcome-nav">
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+      Welcome back: <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa dolorem quo similique ullam, blanditiis voluptatibus ipsum vero doloremque consequatur ab ipsam harum minima quod quasi repellat fugiat ad id illo?</span> 
+    </marquee>
+   </section>
+  <!--===BUY DATA====-->
+  <section class="home">
+    <div class="text">
+      <a href="#"><i class='bx bx-home icon sun'></i></a>
+      <a href="#"><i class='bx bx-notification icon sun'></i></a>
+    </div>
+    <div class="welcome-nav">
+      <marquee behavior="scroll" direction="left" scrollamount="5">
+        Welcome back: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium explicabo tempore illum nisi laborum. Cupiditate nihil assumenda dignissimos non dolorem quae dolor saepe modi omnis architecto. Beatae dolore quidem hic.
+      </marquee>
+    </div>
+
+    <section class="container">
+      <div class="login-container">
+          <h1>LOGIN</h1>
+          <form action="">
+             <label for="">Network</label>
+              <select name="" id="" class="holder">
+                <option value="MTN">MTN</option>
+                <option value="Glo">Glo</option>
+                <option value="Airtel">Airtel</option>
+                <option value="9mobile">9mobile</option>
+              </select>
+
+              <label for="">Data Type</label>
+              <select name="" id="" class="holder">
+                <option value="MTN">SME</option>
+                <option value="Glo">Coprate</option>
+              </select>
+
+              <label for="Number">Number</label>
+              <input type="number" id="number" class="holder" placeholder="----------">
+
+              <label for="">Plan</label>
+              <select name="" id="" class="holder" placeholder="----------">
+                <option value="MTN">1Gig for 200</option>
+                <option value="Glo">5Gig for 1000</option>
+                <!-- <option value="Airtel">Airtel</option>
+                <option value="9mobile">9mobile</option> -->
+              </select>
+             
+              <button type="submit">sign in</button>
+          </form>
+      </div>
+  </section>
+  </section>
+ 
+  <script src="../Frontend/javaScript/admin.js"></script>
+</body>
+
+</html>

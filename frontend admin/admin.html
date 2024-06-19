@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!----======== CSS ======== -->
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../Frontend/css/admin.css">
     <!----===== Boxicons CSS ===== -->
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -49,35 +48,35 @@
           <li class="nav-link">
             <a href="#">
               <i class='bx bx-bar-chart-alt-2 icon'></i>
-              <span class="text nav-text">Revenue</span>
+              <span class="text nav-text">Own a website</span>
             </a>
           </li>
 
           <li class="nav-link">
             <a href="#">
               <i class='bx bx-bell icon'></i>
-              <span class="text nav-text">Notifications</span>
+              <span class="text nav-text">Resolution center</span>
             </a>
           </li>
 
           <li class="nav-link">
             <a href="#">
               <i class='bx bx-pie-chart-alt icon'></i>
-              <span class="text nav-text">Analytics</span>
+              <span class="text nav-text">wallet</span>
             </a>
           </li>
 
           <li class="nav-link">
             <a href="#">
               <i class='bx bx-heart icon'></i>
-              <span class="text nav-text">Likes</span>
+              <span class="text nav-text">Airtime 2 cash</span>
             </a>
           </li>
 
           <li class="nav-link">
             <a href="#">
               <i class='bx bx-wallet icon'></i>
-              <span class="text nav-text">Wallets</span>
+              <span class="text nav-text">My Account</span>
             </a>
           </li>
 
@@ -112,12 +111,12 @@
 
   <section class="home">
     <div class="text">
-      <a href="#"><i class='bx bx-home icon sun'></i></a>
-      <a href="#"><i class='bx bx-notification icon sun'></i></a>
+      <a href="../account.html" class="on"><i class='bx bx-home icon sun'></i></a>
+      <a href="#" class="on"><i class='bx bx-notification icon sun'></i></a>
     </div>
     <div class="welcome-nav">
       <marquee behavior="scroll" direction="left" scrollamount="5">
-        Welcome back: username
+        Welcome back: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium explicabo tempore illum nisi laborum. Cupiditate nihil assumenda dignissimos non dolorem quae dolor saepe modi omnis architecto. Beatae dolore quidem hic.
       </marquee>
     </div>
     <div class="balance-wallet">
@@ -125,47 +124,43 @@
         <div class="balance">
           <i class='bx bx-wallet icon'></i>
           <h1>Wallet Balance</h1>
-          <p>00.00</p>
+          <p id="number">500.00</p>
         </div>
       </div>
       <div class="wallet">
         <div class="balance">
           <i class='bx bx-wallet icon'></i>
           <h1>Referral Balance</h1>
-          <p>00.00</p>
+          <p id="number">700.00</p>
         </div>
       </div>
       <div class="wallet">
         <div class="balance">
           <i class='bx bx-task icon'></i>
           <h1>Task Balance</h1>
-          <p>00.00</p>
+          <p id="number">10000.00</p>
         </div>
       </div>
-    </div>
+    </div>   
     <div class="wallet-text-2">
       <div class="balance-text">
         <h1>Unique Account Number</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum velit voluptatem doloribus ratione similique! Dolorem, saepe distinctio architecto delectus ipsa necessitatibus, illum ab aspernatur quos corporis laborum praesentium ducimus at.
-          <br>
-          <button class="btn">Generate Account</button>
         </p>
+        <div class="best-btn">
+          <button class="btn">Generate Account</button>
+        </div>
       </div>
-      <div class="balance-text">
-        <h1>MAIN</h1>
-        <hr>
-        <p>Buy Data</p>
-        <hr>
-        <p>Buy Airtime</p>
-        <hr>
-        <p>Bills</p>
-        <hr>
-        <p>Airtime 2 Cash</p>
-        <hr>
-        <p>Watch to earn</p>
-        <hr>
-          <button>witdraw Task</button>
+        <div class="balance-text-1">
+          <h1>Task</h1>
+          
+         <hr>
+         <a href="#" class="task"><p>Tap to watch</p></a>
+         <p></p>
+          <hr>
+      
+        <button class="btn">Withdraw Task</button>
       </div>
     </div>
   </section>
