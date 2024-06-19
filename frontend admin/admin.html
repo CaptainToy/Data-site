@@ -12,6 +12,7 @@
     <!----===== Boxicons CSS ===== -->
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
+
   <title>CT TECH Company Dashboard</title>
 
 </head>
@@ -112,7 +113,17 @@
   <section class="home">
     <div class="text">
       <a href="../account.html" class="on"><i class='bx bx-home icon sun'></i></a>
-      <a href="#" class="on"><i class='bx bx-notification icon sun'></i></a>
+      <ul class="notification-drop">
+        <li class="item">
+          <i class='bx bx-notification icon sun'></i> <span class="btn__badge pulse-button ">4</span>     
+          <ul>
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+          </ul>
+        </li>
+      </ul>
+      
     </div>
     <div class="welcome-nav">
       <marquee behavior="scroll" direction="left" scrollamount="5">
@@ -122,52 +133,56 @@
     <div class="balance-wallet">
       <div class="wallet">
         <div class="balance">
-          <i class='bx bx-wallet icon'></i>
+          <box-icon type='solid' name='wallet-alt'></box-icon>
           <h1>Wallet Balance</h1>
           <p id="number">500.00</p>
         </div>
       </div>
       <div class="wallet">
         <div class="balance">
-          <i class='bx bx-wallet icon'></i>
+          <box-icon type='solid' name='bar-chart-alt-2'></box-icon>
           <h1>Referral Balance</h1>
           <p id="number">700.00</p>
         </div>
       </div>
       <div class="wallet">
         <div class="balance">
-          <i class='bx bx-task icon'></i>
+          <box-icon type='solid' name='bank'></box-icon>
           <h1>Task Balance</h1>
           <p id="number">10000.00</p>
         </div>
       </div>
-    </div>   
+    </div>
     <div class="wallet-text-2">
       <div class="balance-text">
         <h1>Unique Account Number</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum velit voluptatem doloribus ratione similique! Dolorem, saepe distinctio architecto delectus ipsa necessitatibus, illum ab aspernatur quos corporis laborum praesentium ducimus at.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores officia perferendis? Similique ex veniam, enim quae labore cumque quisquam, alias laborum earum totam molestias beatae reiciendis eaque possimus ut!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos explicabo laborum hic, modi quam obcaecati at mollitia vel aspernatur molestiae doloremque accusantium recusandae ducimus molestias numquam quas sequi! Quo, doloremque.
+          <br>
+          <marquee behavior="" direction="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde assumenda, velit beatae numquam quod maxime provident ab et facere voluptatem architecto quam. Voluptatibus rerum ea molestiae accusantium veniam, rem odit.</marquee>
         </p>
         <div class="best-btn">
           <button class="btn">Generate Account</button>
         </div>
       </div>
-        <div class="balance-text-1">
-          <h1>Task</h1>
-          
-         <hr>
-         <a href="#" class="task"><p>Tap to watch</p></a>
-         <p></p>
-          <hr>
-      <div class="best-btn">
-        <button class="btn">Withdraw Task</button>
-      </div>  
+      <div class="balance-text-1">
+        <h1>Task</h1>
+        <hr>
+        <a href="#" class="task"><p>Tap to watch</p></a>
+        <hr>
+        <div class="best-btn">
+          <button class="btn">Withdraw Task</button>
+        </div>
       </div>
     </div>
   </section>
   
   
   <script src="../Frontend/javaScript/admin.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 
 </body>
 
