@@ -569,7 +569,6 @@ ul {
 
 .notification-drop {
   font-family: 'Ubuntu', sans-serif;
-  border: 1px solid black;
   color: #444;
 }
 
@@ -591,6 +590,7 @@ ul {
 .notification-drop .item ul {
   display: none;
   position: absolute;
+  border: 10px soild black;
   top: 100%;
   background: #fff;
   left: -200px;
@@ -602,6 +602,8 @@ ul {
 .notification-drop .item ul li {
   font-size: 16px;
   padding: 15px 0 15px 25px;
+  border: 1px soild black;
+
 }
 
 .notification-drop .item ul li:hover {
@@ -627,11 +629,11 @@ ul {
 .btn__badge {
   background: #FF5D5D;
   color: white;
-  font-size: 12px;
+  font-size: 10px;
   position: absolute;
   top: 0;
   right: 0;
-  padding: 3px 10px;
+  padding: 3px 3px;
   border-radius: 50%;
 }
 

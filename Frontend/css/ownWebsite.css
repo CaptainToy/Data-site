@@ -1,0 +1,19 @@
+.class {
+    background: white;
+}
+
+.home {
+    background: white;
+}
+
+.item .box-icon i {
+    color: black;
+    font-size: 20px;
+}
+
+.arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
